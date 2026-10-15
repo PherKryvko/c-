@@ -1,4 +1,6 @@
-//Variables are strongly typed, unlike python's dynamically typed
+﻿//Variables are strongly typed, unlike python's dynamically typed
+using System.Runtime.InteropServices;
+
 int x = 100;
 decimal d = 100m; 
 float f = 100f;
@@ -11,3 +13,27 @@ float f = 100f;
 
 
 x = (int) d; //casting trunctates the value, no rounding 
+
+
+
+///Strings
+/// Are immutable
+/// 
+
+string example = " EEE  eee ee ";
+example = example.Trim().ToLower();
+
+string[] examplesSplit = example.Split(" ");
+
+
+foreach (string word in examplesSplit)
+{
+    Console.WriteLine($"word: {word}");
+}
+
+example = example.Replace("E", "e");
+
+if (example.Contains("e"))
+{
+    Console.Write($"E found {example.IndexOf("e")}");
+}
