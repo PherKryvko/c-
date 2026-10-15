@@ -1,6 +1,4 @@
 ﻿//Variables are strongly typed, unlike python's dynamically typed
-using System.Runtime.InteropServices;
-
 int x = 100;
 decimal d = 100m; 
 float f = 100f;
